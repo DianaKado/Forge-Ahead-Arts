@@ -1,0 +1,263 @@
+/* all pages */
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #242e52;
+}
+
+body {
+  background-color: #121729;
+  height: auto;
+}
+
+header {
+  background-color: #121729;
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 10px solid #242e52;
+}
+
+header img {
+  margin-left: 1.11rem;
+  margin-bottom: .66rem;
+}
+
+nav {
+  margin-right: 1.11rem;
+  margin-bottom: .66rem;
+  min-width: 32.22rem;
+}
+
+nav a {
+  font-weight: 700;
+  color: #5f6891;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #efaa0f;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 700;
+  color: #3c4d88;
+}
+
+p {
+  line-height: 20px;
+}
+/* homepage */
+.home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../resources/images/CC-yarnbomb_1017.jpg");
+  height: 638px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.label {
+  background-color: #121729;
+  width: 215px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.label p {
+  color: #5f6891;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.label p:nth-child(even) {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* vision */
+.beige {
+  background-color: #d1c1a4;
+}
+
+.gray {
+  background-color: #bfbbb9;
+}
+
+.main {
+}
+
+.vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: .56rem solid #cdb07a;
+}
+
+.text {
+  width: 400px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main img {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: .56rem solid #cdb07a;
+}
+
+.mission .text {
+  text-align: right;
+}
+
+.values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 950px;
+}
+
+.grid {
+  width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* upcoming */
+.upcoming {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: #e0d6c5;
+  height: 538px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* portfolio */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #e0d6c5;
+  text-align: center;
+  height: 618px;
+  padding-top: 20px;
+}
+
+.three-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 450px;
+  border-top: 10px solid #c2ac83;
+  border-bottom: 10px solid #c2ac83;
+  margin: 20px 0px;
+}
+
+.three-categories img {
+  width: 360px;
+  margin: 16px 24px;
+}
+
+.three-categories p {
+  width: 360px;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.column2 {
+  width: 414px;
+  background-color: #d1c1a4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.column3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.column3:hover, .column1:hover {
+  background-color: #9e9fad;
+}
+
+.column2:hover {
+  background-color: #c8b591;
+}
+
+/* By the People for the People */
+.BythePeople {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e0d6c5;
+  text-align: center;
+  height: 638px;
+}
+
+.five-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 370px;
+  border-top: 10px solid #c2ac83;
+  border-bottom: 10px solid #c2ac83;
+  margin: 30px 0px;
+}
+
+a h3:hover {
+  color: #efaa0f;
+}
+
+/* all pages */
+footer {
+  display: flex;
+  background-color: #121729;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+ footer p {
+     font-size: 14px;
+     color: #5f6891;
+ }
