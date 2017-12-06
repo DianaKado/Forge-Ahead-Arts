@@ -8,7 +8,9 @@ html {
 
 body {
   background-color: #121729;
-  height: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -53,18 +55,35 @@ h2 {
 h3 {
   font-weight: 700;
   color: #3c4d88;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  color: #3c4d88;
+  font-weight: 700;
 }
 
 p {
   line-height: 20px;
 }
+
+.beige {
+  background-color: #d1c1a4;
+}
+
+.gray {
+  background-color: #bfbbb9;
+}
+
 /* homepage */
 .home {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: url("../../resources/images/CC-yarnbomb_1017.jpg");
-  height: 638px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 638px;
+  width: auto;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -91,17 +110,6 @@ p {
 }
 
 /* vision */
-.beige {
-  background-color: #d1c1a4;
-}
-
-.gray {
-  background-color: #bfbbb9;
-}
-
-.main {
-}
-
 .vision {
   display: flex;
   justify-content: center;
@@ -204,7 +212,7 @@ p {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .column3 {
@@ -224,6 +232,10 @@ p {
   background-color: #c8b591;
 }
 
+a h3:hover {
+  color: #efaa0f;
+}
+
 /* By the People for the People */
 .BythePeople {
   display: flex;
@@ -234,20 +246,50 @@ p {
   height: 638px;
 }
 
-.five-categories {
+.frame {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  height: 370px;
   border-top: 10px solid #c2ac83;
   border-bottom: 10px solid #c2ac83;
   margin: 30px 0px;
 }
 
-a h3:hover {
-  color: #efaa0f;
+.carousel {
+  width: 1250px;
+  align-content: center;
+  justify-content: flex-end;
 }
 
+.matte {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #d1c1a4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.matte:nth-child(even) {
+  background-color: #bfbbb9;
+}
+
+.matte img {
+  margin: 10px 20px 15px 20px;
+}
+
+.matte:hover {
+  background-color: #9e9fad;
+}
+
+.matte:nth-child(odd):hover {
+  background-color: #c8b591;
+}
+
+.matte h4:hover {
+  color: #efaa0f;
+}
 /* all pages */
 footer {
   display: flex;
