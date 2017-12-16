@@ -8,9 +8,9 @@ html {
 
 body {
   background-color: #121729;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 header {
@@ -23,20 +23,23 @@ header {
 }
 
 header img {
-  margin-left: 1.11rem;
-  margin-bottom: .66rem;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 nav {
-  margin-right: 1.11rem;
-  margin-bottom: .66rem;
-  min-width: 32.22rem;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  min-width: 580px;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav a {
   font-weight: 700;
   color: #5f6891;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
 }
 
 nav a:hover {
@@ -46,6 +49,7 @@ nav a:hover {
 h1 {
   font-weight: 700;
   font-size: 21px;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -68,6 +72,10 @@ p {
   line-height: 20px;
 }
 
+em {
+  font-style: italic;
+}
+
 .beige {
   background-color: #d1c1a4;
 }
@@ -77,7 +85,7 @@ p {
 }
 
 /* homepage */
-.home {
+/*.home {
   background-image: url("../../resources/images/CC-yarnbomb_1017.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -87,8 +95,18 @@ p {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}*/
+
+.home {
+  height: 100%;
+  width: auto;
 }
 
+.home img {
+  width: 100%;
+  height: auto;
+}
+/*
 .label {
   background-color: #121729;
   width: 215px;
@@ -108,7 +126,7 @@ p {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-
+*/
 /* vision */
 .vision {
   display: flex;
@@ -158,12 +176,12 @@ p {
 .upcoming {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: center;
   background-color: #e0d6c5;
-  height: 538px;
+  height: 638px;
+  width: 100%;
   text-align: center;
-  padding-top: 100px;
 }
 
 /* portfolio */
@@ -237,7 +255,7 @@ a h3:hover {
 }
 
 /* By the People for the People */
-.BythePeople {
+.BythePeople, .msyb, .ouay, .ht, .river, .barriers, .ccyb, .taskparty, .shebytes, .shadow2shadow, .bazaar, .specimens1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,7 +264,7 @@ a h3:hover {
   height: 638px;
 }
 
-.frame {
+.beigeframe {
   display: flex;
   justify-content: center;
   border-top: 10px solid #c2ac83;
@@ -256,8 +274,10 @@ a h3:hover {
 
 .carousel {
   width: 1250px;
+  display: flex;
+  flex-direction: row;
   align-content: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .matte {
@@ -290,6 +310,50 @@ a h3:hover {
 .matte h4:hover {
   color: #efaa0f;
 }
+
+/* by the people subpages */
+
+.grayframe {
+  display: flex;
+  justify-content: center;
+  border-top: 10px solid #9e9fad;
+  border-bottom: 10px solid #9e9fad;
+  margin-top: 20px;
+}
+
+.grayframe img {
+  margin: 25px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  border-bottom:  10px solid #c2ac83;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.description p {
+  text-align: center;
+  width: 700px;
+}
+
+.horizontal-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.horizontal-nav h3 {
+  margin: 0px 180px;
+}
+.ht p {
+  width: 660px;
+}
+.river p, .barriers p, .ccyb p, .taskparty p, .shebytes p, .specimens1 p{
+  width: 900px;
+}
+
 /* all pages */
 footer {
   display: flex;
