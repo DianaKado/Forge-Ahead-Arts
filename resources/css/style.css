@@ -10,7 +10,6 @@ body {
   background-color: #121729;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 header {
@@ -20,6 +19,12 @@ header {
   align-items: flex-end;
   justify-content: space-between;
   border-bottom: 10px solid #242e52;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 10;
 }
 
 header img {
@@ -76,6 +81,10 @@ em {
   font-style: italic;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .beige {
   background-color: #d1c1a4;
 }
@@ -84,18 +93,25 @@ em {
   background-color: #bfbbb9;
 }
 
+.footer-relative {
+  position: relative;
+  top: 90px;
+}
 /* homepage */
-/*.home {
+.home {
   background-image: url("../../resources/images/CC-yarnbomb_1017.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 638px;
+  min-height: 678px;
   width: auto;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-}*/
+  position: relative;
+  top: 90px;
+  border-bottom: 10px solid #242e52;
+}
 
 .home {
   height: 100%;
@@ -106,7 +122,7 @@ em {
   width: 100%;
   height: auto;
 }
-/*
+
 .label {
   background-color: #121729;
   width: 215px;
@@ -126,13 +142,15 @@ em {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-*/
+
 /* vision */
 .vision {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: .56rem solid #cdb07a;
+  border-bottom: 10px solid #cdb07a;
+  position: relative;
+  top: 90px;
 }
 
 .text {
@@ -150,7 +168,9 @@ em {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: .56rem solid #cdb07a;
+  border-bottom: 10px solid #cdb07a;
+  position: relative;
+  top: 90px
 }
 
 .mission .text {
@@ -162,6 +182,9 @@ em {
   justify-content: center;
   align-items: center;
   min-width: 950px;
+  position: relative;
+  top: 90px;
+  border-bottom: 10px solid #cdb07a;
 }
 
 .grid {
@@ -182,6 +205,8 @@ em {
   height: 638px;
   width: 100%;
   text-align: center;
+  position: relative;
+  top: 90px;
 }
 
 /* portfolio */
@@ -230,7 +255,7 @@ em {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
 }
 
 .column3 {
@@ -352,6 +377,88 @@ a h3:hover {
 }
 .river p, .barriers p, .ccyb p, .taskparty p, .shebytes p, .specimens1 p{
   width: 900px;
+}
+
+/* who */
+.who {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0d6c5;
+  width: 100%;
+  position: relative;
+  top: 90px;
+}
+
+.bios {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 800px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 170px;
+}
+
+.bio:nth-child(odd) {
+  background-color: #d1c1a4;
+}
+
+.bio:nth-child(even) {
+  background-color: #c0bab8;
+}
+
+.bio-text {
+  padding: 0px 20px;
+}
+
+/*contact us*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 8px; /* Some padding */
+    border: 1px solid #bfbbb9; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: #e0d6c5;
+    font-size: 14px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #5f6891;
+    color: #d1c1a4;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #efaa0f;
+    color: #242e52;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #d1c1a4;
+    padding: 20px 25%;
+    height: 598px;
 }
 
 /* all pages */
