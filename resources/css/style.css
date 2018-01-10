@@ -421,8 +421,41 @@ a h3:hover {
 }
 
 /*contact us*/
+/* Add a background color and some padding around the form */
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #d1c1a4;
+    padding: 20px 25%;
+    height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.text-danger {
+    display: none;
+    /*font-size: 16px;
+    color: red;
+    margin-top: -14px;
+    margin-bottom: 10px;*/
+}
+
+.success-alert {
+  font-size: 16px;
+  color: green;
+}
+
+.alert-danger {
+  font-size: 16px;
+  color: red;
+}
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type~=text], select, textarea {
     width: 100%; /* Full width */
     padding: 8px; /* Some padding */
     border: 1px solid #bfbbb9; /* Gray border */
@@ -434,7 +467,18 @@ input[type=text], select, textarea {
     background-color: #e0d6c5;
     font-size: 14px;
 }
-
+input[type=email] {
+    width: 100%; /* Full width */
+    padding: 8px; /* Some padding */
+    border: 1px solid #bfbbb9; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: #e0d6c5;
+    font-size: 14px;
+}
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: #5f6891;
@@ -451,14 +495,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #efaa0f;
     color: #242e52;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    border-radius: 5px;
-    background-color: #d1c1a4;
-    padding: 20px 25%;
-    height: 598px;
 }
 
 /* all pages */
